@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <link rel="shortcut icon" href="favicon.ico" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>Coffee</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="topnav">
+                <div class="logo">
+                    <a href="javascript:;">COFFEE</a>
+                </div>
+                <div class="main-nav">
+                    <ul>
+                        <li><a href="javascript:;">Home</a></li>
+                        <li><a class="active" href="javascript:;">Orders</a></li>
+                        <li><a href="javascript:;">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="container">
+                <h1 class="page-title">Coffee Ordering Application</h1>
+                <div class="order-area">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h3>&nbsp;</h3>
+                            <h3 class="section-title">Place Order:</h3>
+                            <div class="section-content">
+                                <form action="#" id="place_order_form">
+                                    <div class="form-group row">
+                                        <label for="drink" class="col-sm-4 col-form-label">Choice of Drinks</label>
+                                        <div class="col-sm-8">
+                                            <select class="form-control" id="drink"></select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="drink-size" class="col-sm-4 col-form-label">Size of Drinks</label>
+                                        <div class="col-sm-8">
+                                            <select class="form-control" id="drink-size"></select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="milk-type" class="col-sm-4 col-form-label">Type of Milk</label>
+                                        <div class="col-sm-8">
+                                            <select class="form-control" id="milk-type"></select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="cream" class="col-sm-4 col-form-label">Extra Cream</label>
+                                        <div class="col-sm-8">
+                                            <select class="form-control" id="cream"></select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="syrup" class="col-sm-4 col-form-label">Syrup</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="syrup">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="current-drink" class="col-sm-4 col-form-label">currentDrink: </label>
+                                        <div class="col-sm-8">
+                                            <span id="current-drink" class="form-control"></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="form-actions">
+                                <button class="btn btn-primary" id="add-to-order">Add to order</button>
+                                <button class="btn btn-danger" id="add-to-favourite">Add to Favourite</button>
+                                <button class="btn btn-info" id="order-favourite">Order Favourite</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 offset-md-1">
+                            <h3 class="section-title">Overall Orders: £ <span id="overall-price" class="overall-price">0</span></h3>
+                            <h3 class="section-title">SubTotal(This Order): £ <span id="subtotal" class="overall-price">0</span></h3>
+                            <div id="overall-orders" class="section-content">
+                                
+                            </div>
+                            <button class="btn btn-success" id="place-order">Place Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="database.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
